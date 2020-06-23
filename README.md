@@ -22,4 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 
-This app uses Codeship for CI.
+This app uses Codeship for CI. Made few changes to Codeship CI.
