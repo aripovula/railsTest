@@ -5,7 +5,7 @@ describe('Rails using scenarios examples', function() {
 
   it('setup basic scenario', function () {
     cy.appScenario('basic')
-    cy.url().should('include', '/');
+    // cy.url().should('include', '/');
     // cy.visit('/articles')
     // cy.contains('Title');
     // cy.contains('Description');
