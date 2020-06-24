@@ -5,9 +5,10 @@ describe('Rails using scenarios examples', function() {
 
   it('setup basic scenario', function () {
     cy.appScenario('basic')
-    cy.visit('/articles')
-    cy.contains('Title');
-    cy.contains('Description');
+    cy.url().should('include', '/');
+    // cy.visit('/articles')
+    // cy.contains('Title');
+    // cy.contains('Description');
     // cy.get('table').find('tbody').should(($tbody) => {
     //   // clean should of removed these from other tests
     //   expect($tbody).not.to.contain('Good bye Mars')
