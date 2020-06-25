@@ -16,11 +16,11 @@ describe('Rails using scenarios examples', function () {
   });
 
 
-  it('example of missing scenario failure', function () {
-    cy.visit('/articles')
-    cy.contains('Title');
-    cy.contains('Description');
-  });
+  // it('example of missing scenario failure', function () {
+  //   cy.visit('/articles')
+  //   cy.contains('Title');
+  //   cy.contains('Description');
+  // });
 
   // it('example of missing app failure', function() {
   //   cy.visit('/')
