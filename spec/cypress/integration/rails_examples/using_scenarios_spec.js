@@ -1,4 +1,4 @@
-describe('Rails using scenarios examples', function() {
+describe('Rails using scenarios examples', function () {
   beforeEach(() => {
     cy.app('clean') // have a look at cypress/app_commands/clean.rb
   })
@@ -6,9 +6,6 @@ describe('Rails using scenarios examples', function() {
   it('setup basic scenario', function () {
     cy.appScenario('basic')
     // cy.url().should('include', '/');
-    // cy.visit('/articles')
-    // cy.contains('Title');
-    // cy.contains('Description');
     // cy.get('table').find('tbody').should(($tbody) => {
     //   // clean should of removed these from other tests
     //   expect($tbody).not.to.contain('Good bye Mars')
@@ -19,15 +16,15 @@ describe('Rails using scenarios examples', function() {
   });
 
 
-  // it('example of missing scenario failure', function() {
-  //   cy.visit('/')
-  //   cy.appScenario('basic')
-  //   // cy.appScenario('missing') // uncomment these if you want to see what happens
-  // })
+  it('example of missing scenario failure', function () {
+    cy.visit('/articles')
+    cy.contains('Title');
+    cy.contains('Description');
+  });
 
   // it('example of missing app failure', function() {
   //   cy.visit('/')
   //   cy.appScenario('basic')
   //   // cy.app('run_me') // uncomment these if you want to see what happens
   // })
-})
+});
